@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: github2todo.micronaut
+---
+testFramework: kotlintest
+sourceLanguage: kotlin
