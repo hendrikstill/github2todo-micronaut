@@ -7,7 +7,9 @@ import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Post
 import org.slf4j.LoggerFactory
 
+@Introspected
 data class GithubIssue(val number: Int, val title: String)
+
 @Introspected
 data class GithubWebhookEvent(val issue: GithubIssue)
 
