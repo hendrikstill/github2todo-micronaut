@@ -5,8 +5,8 @@ import io.micronaut.http.annotation.Post
 import io.micronaut.http.client.annotation.Client
 import io.reactivex.Single
 
-@Client("http://todo-app-web.todo-app.knative-meetup-poc.still.network")
+@Client("\${todoapp.url}")
 interface TodoAppClient {
-    @Post("/insert/todo/{todo}")
+    @Post("/todo/{todo}")
     fun createNewTask(todo: String): Single<HttpResponse<String>>
 }
