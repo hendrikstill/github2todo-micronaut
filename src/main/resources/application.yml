@@ -1,5 +1,7 @@
 micronaut:
   application:
     name: github2todo-micronaut
+  server:
+    port: ${port:8080}
 todoapp:
   url: http://todo-app-web.todo-app.knative-meetup-poc.still.network
