@@ -13,7 +13,7 @@ Content-Type: application/json
     "id": 510875583,
     "node_id": "MDU6SXNzdWU1MTA4NzU1ODM=",
     "number": 34,
-    "title": "Test",
+    "title": "Testblub",
     "user": {
       "login": "hendrikstill",
       "id": 374528,

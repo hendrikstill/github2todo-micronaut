@@ -24,7 +24,7 @@ class EventController(private val todoAppClient: TodoAppClient) {
     @Post
     fun post(@Body event: GithubWebhookEvent): HttpResponse<String> {
         log.info(event.toString())
-        todoAppClient.createNewTask("${event.issue.number}:${event.issue.title}").blockingGet()
+        todoAppClient.createNewTask("Look at GH-Issue ${event.issue.number}:${event.issue.title}").blockingGet()
 
         return HttpResponse.created("created")
     }
